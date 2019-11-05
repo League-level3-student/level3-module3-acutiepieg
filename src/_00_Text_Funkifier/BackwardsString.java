@@ -12,7 +12,9 @@ public class BackwardsString extends SpecialString {
 		for(int i = s.length() - 1; i >= 0; i--) {
 			newString = newString + s.charAt(i);
 		}
+		
 		return newString;
+		
 	}
 
 }

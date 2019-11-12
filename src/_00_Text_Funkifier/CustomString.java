@@ -12,11 +12,9 @@ public class CustomString extends SpecialString {
 		String secondPart = s.substring(s.length() / 2, s.length());
 		String newSecondPart = "";
 		String finalString = "";
-		for (int i = secondPart.length(); i > secondPart.length() - 1; i--) {
-			if (i < secondPart.length()) {
-			newSecondPart = newSecondPart + secondPart.charAt(i);
-			}
-		}        
+		for (int i = secondPart.length() - 1; i >= 0; i--) {
+				newSecondPart = newSecondPart + secondPart.charAt(i);
+		}
 		finalString = firstPart + newSecondPart;
 		return finalString;
 	}
